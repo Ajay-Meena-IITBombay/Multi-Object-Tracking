@@ -294,7 +294,7 @@ start_tracking()
 # In[15]:
 
 
-cv2.destroyAllWindows()
+# cv2.destroyAllWindows()
 
 
 # In[ ]:
