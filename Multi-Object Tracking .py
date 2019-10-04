@@ -22,10 +22,6 @@ kernel_d1 = np.array([[0,0,1,0,0],[0,0,1,0,0],[1,1,1,1,1],[0,0,1,0,0],[0,0,1,0,0
 kernel_d2 = np.array([[0,0,0,0,0],[0,0,1,0,0],[0,1,1,1,0],[0,0,1,0,0],[0,0,0,0,0]],np.uint8)
 
 
-"""Path of Video"""
-path_vid = "C:/Users/dell pc/Desktop/exchange/Sem 8/ELEC431-ADAPTIVE SIGNAL PROCESSING/project/Final reports and code/Project Material(code and test video and result video)/input video.mpg"
-
-
 # In[5]:
 
 
@@ -287,24 +283,12 @@ def start_tracking():
 # In[17]:
 
 
-vidcap = cv2.VideoCapture(path_vid)
-start_tracking()
-
-
-# In[15]:
-
-
-# cv2.destroyAllWindows()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
+if __name__=="__main__":
+    import sys
+    args = sys.argv[1]
+    vidcap = cv2.VideoCapture(args)
+    start_tracking()
+    
 
 
 
